@@ -53,7 +53,7 @@ app.get("/addfeed", function (req, res) {
 
 
 app.get("/deletefeed", function (req, res) {
-    var id = req.query.a;
+    var id = parseInt(req.query.a);
     var x = {
       id: id
     }
